@@ -4,14 +4,7 @@ html
     title
       | Blog
     = csrf_meta_tags
-    = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
   body
-    header
-      |  Это просто тест! 
-      hr
     = yield
-    footer
-      hr
-      |  Здесь будет футер. 

@@ -30,3 +30,5 @@
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+vendor/assets/javascripts/.keep
+vendor/assets/stylesheets/.keep
