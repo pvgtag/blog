@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       end
       t.with_options default: false do
         boolean :moderator
-        boolean :creater
+        boolean :creator
         boolean :banned
       end
 
