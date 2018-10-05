@@ -12,12 +12,9 @@ p
 p
   strong Visible:
   = @post.visible
-table
+p
   strong Comments:
-  - @post.comments.order(:created_at).each do |comment|
-    tr
-      td: b = comment.user.name
-      td = comment.body
+  = paginate @comments_p
 
 => link_to 'Edit', edit_post_path(@post)
 '|
