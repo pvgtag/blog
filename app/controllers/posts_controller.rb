@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!
+
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
@@ -10,7 +12,6 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @comments_p = @post.comments.order(:created_at).page(params[:page]).per(3)
   end
 
   # GET /posts/new
@@ -70,6 +71,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :body, :user, :references, :visible)
+      params.require(:post).permit(:title, :body, :user, :visible)
     end
 end
