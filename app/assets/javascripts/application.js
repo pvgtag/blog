@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery3
 //= require xray
 //= require_tree .

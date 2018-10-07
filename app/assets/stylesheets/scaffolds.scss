@@ -1,7 +1,11 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: rgb(16, 6, 107);
+$back-color: rgb(240, 235, 173);
+
 body {
-  background-color: #fff;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  background-color: $back-color;
+  color: $primary-color;
+  font-family: $font-stack;
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
@@ -86,4 +90,22 @@ div {
 
 label {
   display: block;
+}
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+   
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+header ul li {
+  li { display: inline-block; }  
 }
