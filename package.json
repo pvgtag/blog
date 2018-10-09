@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "postcss-smart-import": "^0.7.6"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}
