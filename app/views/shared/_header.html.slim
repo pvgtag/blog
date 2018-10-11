@@ -1,12 +1,12 @@
 header
   ul
     - if user_signed_in?
-      li
+      li.btn.btn-info
         span = t('label.hello') % current_user.name
-      li
+      li.btn.btn-outline-success
         = link_to t('label.log_out'), destroy_user_session_path, method: :delete
     - else
-      li
+      li.btn.btn-info
         = link_to t('label.log_in'), new_user_session_path
-      li
+      li.btn.btn-default
         = link_to 'Register', new_user_registration_path

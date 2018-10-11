@@ -7,8 +7,11 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-//= require jquery3
-//= require xray
+import "bootstrap"
+import "./index.css"
 
-import "init";
-import "../components/page/page";
+console.log('Hello World from Webpacker')
+
+window.onload = function() {
+    document.body.insertAdjacentHTML("afterbegin", "Hello Webpack!");
+}
